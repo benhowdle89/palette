@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Palette.js</title>
+    <link href="https://unpkg.com/basscss@8.0.1/css/basscss.min.css" rel="stylesheet">
+    <style media="screen">
+        * {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+            background: #fff;
+            color: #34495e;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .poster {
+            min-height: 200px;
+        }
+
+        .poster img {
+
+        }
+
+        .palette {
+
+        }
+
+        .palette li {
+            height: 50px;
+            flex-grow: 1;
+            flex-basis: 0;
+            margin: 0 2px;
+        }
+
+        .palette-output {
+            border-radius: 4px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container center p2">
+        <div class="posters flex flex-wrap max-width-3 mx-auto">
+            <div class="poster col-4 flex flex-column mb2">
+                <img src="img/brave.jpg" alt="" data-palette-target class="mb2 flex-auto">
+                <ul class="palette flex" data-palette-output>
+
+                </ul>
+            </div>
+            <div class="poster col-4 flex flex-column mb2">
+                <img src="img/finding-nemo.jpg" alt="" data-palette-target class="mb2 flex-auto">
+                <ul class="palette flex" data-palette-output>
+
+                </ul>
+            </div>
+            <div class="poster col-4 flex flex-column mb2">
+                <img src="img/good-dinosaur.jpg" alt="" data-palette-target class="mb2 flex-auto">
+                <ul class="palette flex" data-palette-output>
+
+                </ul>
+            </div>
+            <div class="poster col-4 flex flex-column mb2">
+                <img src="img/ratatouille.jpg" alt="" data-palette-target class="mb2 flex-auto">
+                <ul class="palette flex" data-palette-output>
+
+                </ul>
+            </div>
+            <div class="poster col-4 flex flex-column mb2">
+                <img src="img/wall-e.jpg" alt="" data-palette-target class="mb2 flex-auto">
+                <ul class="palette flex" data-palette-output>
+
+                </ul>
+            </div>
+            <div class="poster col-4 flex flex-column mb2">
+                <img src="img/incredibles.jpg" alt="" data-palette-target class="mb2 flex-auto">
+                <ul class="palette flex" data-palette-output>
+
+                </ul>
+            </div>
+            <div class="poster col-4 flex flex-column mb2">
+                <img src="img/monsters-inc.jpg" alt="" data-palette-target class="mb2 flex-auto">
+                <ul class="palette flex" data-palette-output>
+
+                </ul>
+            </div>
+            <div class="poster col-4 flex flex-column mb2">
+                <img src="img/bugs-life.jpg" alt="" data-palette-target class="mb2 flex-auto">
+                <ul class="palette flex" data-palette-output>
+
+                </ul>
+            </div>
+            <div class="poster col-4 flex flex-column mb2">
+                <img src="img/inside-out.jpg" alt="" data-palette-target class="mb2 flex-auto">
+                <ul class="palette flex" data-palette-output>
+
+                </ul>
+            </div>
+        </div>
+        <footer class="pb2">
+            <p class="center">
+                Made by <a href="http://benhowdle.im">Ben Howdle</a>
+            </p>
+        </footer>
+    </div>
+    <script src="./dist/palette.js"></script>
+    <script type="text/javascript">
+        window.addEventListener('load', function(){
+            Palette()
+        })
+    </script>
+</body>
+</html>
