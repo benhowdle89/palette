@@ -1,5 +1,3 @@
-const prefixes = ['webkit']
-
 const targetSelector = 'data-palette-target'
 const targetOutput = 'data-palette-output'
 
