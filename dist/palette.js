@@ -11,10 +11,9 @@ var targetSelector = 'data-palette-target';
 var targetOutput = 'data-palette-output';
 
 var Palette = function () {
-    function Palette(target, callback) {
+    function Palette(target) {
         _classCallCheck(this, Palette);
 
-        this.callback = callback || function () {};
         this.target = target;
         this.output = this.target.parentElement ? this.target.parentElement.querySelector('[' + targetOutput + ']') : null;
         this.canvas = document.createElement('canvas');
@@ -122,7 +121,7 @@ var Palette = function () {
             this.getImageData();
             var rendered = this.renderPalette();
             if (!this.output) {
-                return this.callback(rendered);
+                return console.log(rendered);
             }
             return this.buildPaletteOutput(rendered);
         }

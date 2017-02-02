@@ -4,8 +4,7 @@ const targetSelector = 'data-palette-target'
 const targetOutput = 'data-palette-output'
 
 class Palette {
-    constructor(target, callback) {
-        this.callback = callback || (() => {})
+    constructor(target) {
         this.target = target
         this.output = this.target.parentElement ? this.target.parentElement.querySelector(`[${targetOutput}]`) : null
         this.canvas = document.createElement('canvas')
@@ -103,7 +102,7 @@ class Palette {
         this.getImageData()
         const rendered = this.renderPalette()
         if(!this.output) {
-            return this.callback(rendered)
+            return console.log(rendered)
         }
         return this.buildPaletteOutput(rendered)
     }
